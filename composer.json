@@ -1,0 +1,28 @@
+{
+    "name": "hillel/shortener",
+    "description": "Library for getting short code by url",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Maystrenko",
+            "email": "ashterix69@gmail.com"
+        }
+    ],
+    "type" : "component",
+    "homepage": "https://github.com/HilelPhpPro/shortener",
+    "require" : {
+        "php": ">=8.2",
+        "guzzlehttp/guzzle": "7.*"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Hillel\\Short\\": "src/"
+        }
+    },
+    "extra" : {
+    },
+    "scripts": {
+        "auto-scripts": {
+        }
+    }
+}
