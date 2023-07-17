@@ -11,7 +11,7 @@
     "type" : "component",
     "homepage": "https://github.com/HilelPhpPro/shortener",
     "require" : {
-        "php": ">=8.2",
+        "php": ">=8.0",
         "guzzlehttp/guzzle": "7.*"
     },
     "autoload" : {
