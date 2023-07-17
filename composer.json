@@ -1,5 +1,5 @@
 {
-    "name": "hillel/shortener",
+    "name": "hillel-php-pro/shortener",
     "description": "Library for getting short code by url",
     "license": "MIT",
     "authors": [
