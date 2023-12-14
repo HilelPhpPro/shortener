@@ -1,20 +1,15 @@
 <?php
 
-namespace Hillel\Short\ValueObjects;
+namespace Hillel\Shortener3\ValueObjects;
 
 class UrlCodePair
 {
-    protected string $code;
-    protected string $url;
-
     /**
      * @param string $code
      * @param string $url
      */
-    public function __construct(string $code, string $url)
+    public function __construct(protected string $code, protected string $url)
     {
-        $this->code = $code;
-        $this->url = $url;
     }
 
     /**

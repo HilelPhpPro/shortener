@@ -1,28 +1,23 @@
 {
-    "name": "hillel-php-pro/shortener",
-    "description": "Library for getting short code by url",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alex Maystrenko",
-            "email": "ashterix69@gmail.com"
-        }
-    ],
-    "type" : "component",
-    "homepage": "https://github.com/HilelPhpPro/shortener",
-    "require" : {
-        "php": ">=8.0",
-        "guzzlehttp/guzzle": "7.*"
-    },
-    "autoload" : {
-        "psr-4" : {
-            "Hillel\\Short\\": "src/"
-        }
-    },
-    "extra" : {
-    },
-    "scripts": {
-        "auto-scripts": {
-        }
+  "name": "hillel-php-pro/shortener3",
+  "description": "Library for get short code from url",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alex Maystrenko",
+      "email": "ashterix69@gmail.com"
     }
+  ],
+  "type" : "component",
+  "homepage": "https://github.com/HilelPhpPro/shortener3",
+  "keywords" : [],
+  "require" : {
+    "php": ">=8.2",
+    "guzzlehttp/guzzle": "7.*"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Hillel\\Shortener3\\" : "src/"
+    }
+  }
 }

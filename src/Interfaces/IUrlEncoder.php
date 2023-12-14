@@ -1,6 +1,6 @@
 <?php
 
-namespace Hillel\Short\Interfaces;
+namespace Hillel\Shortener3\Interfaces;
 
 use InvalidArgumentException;
 

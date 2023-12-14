@@ -1,10 +1,10 @@
 <?php
 
-namespace Hillel\Short;
+namespace Hillel\Shortener3;
 
-use Hillel\Short\Exceptions\DataNotFoundException;
-use Hillel\Short\Interfaces\ICodeRepository;
-use Hillel\Short\ValueObjects\UrlCodePair;
+use Hillel\Shortener3\Exceptions\DataNotFoundException;
+use Hillel\Shortener3\Interfaces\ICodeRepository;
+use Hillel\Shortener3\ValueObjects\UrlCodePair;
 
 class FileRepository implements ICodeRepository
 {
@@ -21,7 +21,7 @@ class FileRepository implements ICodeRepository
     /**
      * @return void
      */
-    protected function getDbFromStorage()
+    protected function getDbFromStorage(): void
     {
         if (file_exists($this->fileDb)) {
             $content = file_get_contents($this->fileDb);
@@ -86,6 +86,6 @@ class FileRepository implements ICodeRepository
      */
     public function __destruct()
     {
-        $this->writeFile(json_encode($this->db)); // json_encode($this->db) це те, що потрапляє в аргумент
+        $this->writeFile(json_encode($this->db, JSON_PRETTY_PRINT)); // json_encode($this->db) це те, що потрапляє в аргумент
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Hillel\Short\Helpers;
+namespace Hillel\Shortener3\Helpers;
 
-use Hillel\Short\Interfaces\IUrlValidator;
+use Hillel\Shortener3\Interfaces\IUrlValidator;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ConnectException;
 use InvalidArgumentException;
@@ -38,7 +38,7 @@ class UrlValidator implements IUrlValidator
             200, 201, 301, 302
         ];
         try {
-            $response = $this->client->request('GET', $url);
+            $response = $this->client->get( $url, ['qwe' => true]);
             return (!empty($response->getStatusCode()) && in_array($response->getStatusCode(), $allowCodes));
         } catch (ConnectException $exception) {
             throw new InvalidArgumentException($exception->getMessage(), $exception->getCode());

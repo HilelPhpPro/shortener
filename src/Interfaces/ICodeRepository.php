@@ -1,9 +1,9 @@
 <?php
 
-namespace Hillel\Short\Interfaces;
+namespace Hillel\Shortener3\Interfaces;
 
-use Hillel\Short\ValueObjects\UrlCodePair;
-use Hillel\Short\Exceptions\DataNotFoundException;
+use Hillel\Shortener3\ValueObjects\UrlCodePair;
+use Hillel\Shortener3\Exceptions\DataNotFoundException;
 
 interface ICodeRepository
 {

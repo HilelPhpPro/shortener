@@ -1,6 +1,6 @@
 <?php
 
-namespace Hillel\Short\Exceptions;
+namespace Hillel\Shortener3\Exceptions;
 
 use Exception;
 

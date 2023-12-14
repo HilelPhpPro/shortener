@@ -1,10 +1,10 @@
 <?php
 
-namespace Hillel\Short;
+namespace Hillel\Shortener3;
 
-use Hillel\Short\Exceptions\DataNotFoundException;
-use Hillel\Short\Interfaces\{ICodeRepository, IUrlDecoder, IUrlEncoder, IUrlValidator};
-use Hillel\Short\ValueObjects\UrlCodePair;
+use Hillel\Shortener3\Exceptions\DataNotFoundException;
+use Hillel\Shortener3\Interfaces\{ICodeRepository, IUrlDecoder, IUrlEncoder, IUrlValidator};
+use Hillel\Shortener3\ValueObjects\UrlCodePair;
 use InvalidArgumentException;
 
 class UrlConverter implements IUrlEncoder, IUrlDecoder
@@ -23,6 +23,7 @@ class UrlConverter implements IUrlEncoder, IUrlDecoder
         protected int             $codeLength = self::CODE_LENGTH
     )
     {
+
     }
 
     /**

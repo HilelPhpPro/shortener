@@ -1,6 +1,6 @@
 <?php
 
-namespace Hillel\Short;
+namespace Hillel\Shortener3;
 
 class UrlAnywayConverter extends UrlConverter
 {
